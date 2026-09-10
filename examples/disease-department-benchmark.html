@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>病种科室对标｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/disease-department-benchmark.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="病种科室对标｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/disease-department-benchmark.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>病种科室对标</h1><p class="pitch">把病种与科室的规模、费用和住院日放在同一口径下，形成下一轮核查的起点。</p>
+<p class="role">科主任 / 科室运营联络员 · 软件研发</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>合成科室 A：本期出院 100 人次，总费用 300 万元，平均住院日 8 天，CMI 1.10。</li><li>合成科室 B：本期出院 80 人次，总费用 280 万元，平均住院日 10 天，CMI 1.30。</li><li>合成病组 G-DEMO-01：两科室各 20 人次；A 的该组费用 50 万元、平均住院日 6 天，B 为 60 万元、8 天。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>核对周期、病组定义及病例纳入范围，区分全科室与同病组数据。</li><li>计算次均费用，分别生成科室指标表与同病组对照。</li><li>提炼可见差异，列出病情构成、费用明细等后续核查材料。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>科室概览：A 次均费用 3 万元、平均住院日 8 天；B 次均费用 3.5 万元、10 天，同时保留各自 CMI。</li><li>同病组对照：G-DEMO-01 在 A、B 的次均费用分别为 2.5 万元和 3 万元，平均住院日分别为 6 天和 8 天。</li><li>核查清单：先查同组病例构成、费用明细与出入院口径；上述差异不能直接推出诊疗优劣或成本控制效果。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>数据、科室和病组代号均为合成，G-DEMO-01 不是正式病组编码。两组不是经过匹配的比较样本，需人工复核可比性，不据此排名或作绩效结论。</p></section>
+<section><h2>实践依据</h2><p>病种运营分析软件：已有病种聚合与科室对标页面。</p></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/disease-department-benchmark.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

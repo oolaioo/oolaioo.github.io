@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>护理交班，一眼看清待办｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/nursing-handover.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="护理交班，一眼看清待办｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/nursing-handover.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>护理交班，一眼看清待办</h1><p class="pitch">把班次记录整理为已完成事项、下一班待办与信息缺口，保留逐条核对依据。</p>
+<p class="role">临床护士 / 护理管理者 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>虚构床位 D-01：本班记录时间为 08:00–16:00。</li><li>已完成：14:00 标本送检；15:20 完成宣教，记录已签名。</li><li>待交接：16:30 核对检验报告是否回传；家属联系方式未填写。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>按时间提取已完成与待完成事项，并保留原始记录。</li><li>生成交班草稿，将下一班待办和材料缺口分别列出。</li><li>由护士逐条核对并确认，演示不写入护理信息系统。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>已完成：14:00 标本送检；15:20 宣教完成且记录已签名。依据：输入第 2 行。</li><li>下一班待办：16:30 核对检验报告是否回传。依据：输入第 3 行；当前不能标记为已完成。</li><li>信息缺口：家属联系方式未填写，交班前需核实是否需要补录。依据：输入第 3 行。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>护士核实事项、时间与当前状态后再确认交班。未记录的信息不推定为正常，也不自动补写；本示例不生成护理处置指令。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13022550/" rel="noopener noreferrer">护理交班文书 · 三院实施研究</a><span>2026-03-12 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/nursing-handover.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>检验字典，先把含义对齐｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/laboratory-terminology.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="检验字典，先把含义对齐｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/laboratory-terminology.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>检验字典，先把含义对齐</h1><p class="pitch">整理项目名称、标本、单位和方法，区分标准化候选与暂时不能确认的映射。</p>
+<p class="role">检验科 / 医学数据管理人员 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>虚构字典 LAB-01：名称=葡萄糖；标本=血清；单位=mmol/L；方法=己糖激酶法。</li><li>虚构字典 LAB-02：名称=GLU；标本=未填；单位=mmol/L；方法=未填。</li><li>虚构字典 LAB-03：名称=血糖；标本=指尖全血；单位=mmol/L；方法=电化学法。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>拆分名称、标本、单位、方法，识别别名与缺失字段。</li><li>整理标准名称及编码检索所需的候选信息，保持不同标本与方法的区别。</li><li>将候选及歧义交检验专业人员验证，确认前不写回字典。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>LAB-01：整理为“葡萄糖｜血清｜mmol/L｜己糖激酶法”，四项输入字段齐备，进入标准编码候选检索。依据：输入第 1 行。</li><li>LAB-02：名称候选为“葡萄糖”，但标本和方法缺失；标准编码保持未确认，列出两项补充要求。依据：输入第 2 行。</li><li>LAB-03：保留“指尖全血”和“电化学法”；其标本与方法均不同于 LAB-01，本示例不将两条记录合并。依据：输入第 1、3 行。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>检验专业人员核实别名、标本、单位、方法及标准版本后确认映射。本示例未查询实时术语库，不展示未经核验的标准编码；术语标准化不等于检验结果质控或方法学性能评价。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://www.jmir.org/2026/1/e92499" rel="noopener noreferrer">LabBridge · 检验术语映射研究</a><span>2026-08-20 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/laboratory-terminology.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

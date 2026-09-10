@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究假设比较｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/research-hypothesis-comparison.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="研究假设比较｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/research-hypothesis-comparison.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>研究假设比较</h1><p class="pitch">用一个合成情境展示假设比较：同样是报告变慢，转运、仪器排队与审核可能留下不同的数据特征。</p>
+<p class="role">检验科 / 医务 / 科研协作团队 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>合成情境：某检验流程在工作日高峰时段出现“采集至报告发布”的周转时间延长；这是设计用场景，没有真实医院数据。</li><li>候选解释：标本转运变慢、仪器等待队列变长、结果完成后等待审核。三者都只是待检验假设。</li><li>拟核对记录：采集、实验室接收、上机开始、检测完成及报告发布五个时间戳，并结合项目类型与高峰时段。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>先统一周转时间起止点，把总时间拆成转运、上机等待、检测及审核发布几个区间。</li><li>为三个假设分别写出预期变化与不支持它的观察结果，避免先选结论再找证据。</li><li>提出能区分解释的最小数据核查：按同类项目与时段比较各区间，而不是只看总周转时间。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>假设 A｜标本转运：预测“采集→接收”区间延长，而接收后的区间相对稳定；需要采集与接收时间、转运班次。若该区间未变，转运解释就缺少支持。</li><li>假设 B｜仪器排队：预测“接收→上机开始”在高峰时段延长，且与同期待检量一起变化；需要上机时间、队列与维护记录。接收后变慢本身不能单独证明仪器排队。</li><li>假设 C｜审核等待：预测“检测完成→报告发布”区间延长，而此前区间相对稳定；需要完成与发布时间、审核排班及复检标记。异常结果复核须与普通审核等待分开。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>三种解释是承安设计的合成假设比较，不代表真实问题原因。核查前须确认各系统时间同步及时间戳含义；Google AI co-scientist 仅作为假设迭代方法参考，本例未调用该系统。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/" rel="noopener noreferrer">Google AI co-scientist：研究假设生成、比较与迭代方法参考</a><span>2025-02-19 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/research-hypothesis-comparison.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究条件，逐条核查依据｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/research-criteria-check.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="研究条件，逐条核查依据｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/research-criteria-check.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>研究条件，逐条核查依据</h1><p class="pitch">把条件与材料逐条对应，区分已满足、未满足和信息不足，保留待核事项。</p>
+<p class="role">临床研究者 / 研究协调员 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>虚构研究 DEMO-STUDY-01：年龄 18–65 岁；随访记录不少于 90 天；需有基线检验结果。</li><li>虚构受试者 DEMO-P03：年龄 52 岁；随访记录 120 天。</li><li>材料状态：未提供基线检验结果；未提供知情同意记录。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>将研究条件拆成独立规则，保持原始条件和阈值。</li><li>逐条匹配材料证据，缺失的信息标记为信息不足。</li><li>输出初核结果与补充清单，由研究团队核实资格及研究手续。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>年龄条件：按虚构规则满足；52 岁位于 18–65 岁范围。依据：输入第 1、2 行。</li><li>随访条件：按虚构规则满足；120 天不少于 90 天。依据：输入第 1、2 行。</li><li>基线检验条件：信息不足，需补充结果；知情同意记录另列待核，不据此推定已同意或具备入组资格。依据：输入第 3 行。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>研究团队核实正式方案、源记录和知情同意状态后决定后续流程。材料未提供不等于条件不满足；本示例不确认入组、不联系受试者，也不提交任何研究材料。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13035440/" rel="noopener noreferrer">TrialGPT · 研究条件初筛研究</a><span>2026-02-04 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/research-criteria-check.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

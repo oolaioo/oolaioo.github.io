@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据分析与结论溯源｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/research-analysis-provenance.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="数据分析与结论溯源｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/research-analysis-provenance.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>数据分析与结论溯源</h1><p class="pitch">用三批合成汇总数，展示计算、来源与结论边界如何放在一起审查。</p>
+<p class="role">科研团队 / 检验管理 / 数据协作 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>合成数据表：批次 A、B、C 的汇总周转时间分别为 90、80、70 分钟；本例约定汇总指标为批内中位数。</li><li>统一定义：周转时间 TAT 从标本采集到报告发布；批次按 A→B→C 排列，全部数值仅用于方法演示。</li><li>已知缺口：没有批内个体记录、样本量、项目构成或同期对照，因此不能计算变化的不确定性或判定原因。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>保留原始三行汇总表和指标口径，先说明这些是合成批次的中位数，而非真实医院绩效。</li><li>手算首末批次的绝对变化与相对变化，并明确以批次 A 为基准。</li><li>把描述性变化与因果解释分开，列出还缺哪些数据才能继续开展正式分析。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>溯源表：A＝90 分钟；B＝80 分钟；C＝70 分钟。来源为本例预置的三行合成数据，汇总口径为批内中位数；没有加载外部数据或运行分析脚本。</li><li>可复核计算：C 比 A 少 90−70＝20 分钟；以 A 为基准，相对下降为 20÷90×100%≈22.2%。这是首末两个批次中位数的描述性比较。</li><li>结论边界：三个汇总数呈下降，但不能证明流程改造造成了下降，也不能据此声称统计显著。需补充个体时间、样本量、项目构成、同期变化及合适对照。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>可直接用三行输入核对手算结果。不同批次的中位数下降，不等于每份标本都缩短了同样时间；Kosmos 仅提供结论溯源的方法参照，不代表本例运行了其数据分析系统。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://arxiv.org/abs/2511.02824v2" rel="noopener noreferrer">Kosmos：以分析依据和原始来源追溯科研陈述的方法参考（论文 v2）</a><span>2025-11-05 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/research-analysis-provenance.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>

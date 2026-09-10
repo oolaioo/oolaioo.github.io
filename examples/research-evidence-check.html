@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>科研主张证据核查｜承安</title><meta name="description" content="科研与医院管理智能体任务实例：完整输入、处理步骤、示例输出、人工复核点与依据。">
+<link rel="canonical" href="https://oolaioo.github.io/examples/research-evidence-check.html"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/example-reader.css">
+<meta property="og:type" content="website"><meta property="og:title" content="科研主张证据核查｜承安"><meta property="og:url" content="https://oolaioo.github.io/examples/research-evidence-check.html">
+</head><body><header><a href="/" class="brand">承安 <span>CHENG’AN</span></a><nav aria-label="导航"><a href="/examples/">实例目录</a><a href="/#contact">联系承安</a></nav></header>
+<main><p class="eyebrow">任务实例 · 完整阅读</p><h1>科研主张证据核查</h1><p class="pitch">以 BioCheck 原论文为例，区分论文已经评估的能力、作者承认的局限，以及尚无证据支持的推广。</p>
+<p class="role">IVD 研发 / 科研团队 / 个人研究者 · 方法设计</p>
+<aside>预置流程演示：示例输入与输出为预先编写的内容，不代表实时模型运行或医院正式交付。</aside>
+<section><h2>01 输入</h2><ol><li>待核查问题：BioCheck 在 SciFact 上的评估结果，能否推广到全部医学主张？</li><li>公开材料：2026-08-24 预印本《Generating Biomedical Fact-Checking Reports with RL-Enhanced Agentic Search》。</li><li>核查范围：原论文的评估任务、训练数据和局限讨论；不把摘要中的性能变化当作通用医学可靠性证明。</li></ol></section>
+<section><h2>02 处理步骤</h2><ol><li>把问题拆成两层：论文测量了什么，以及“全部医学主张”比原评估范围多出了哪些场景。</li><li>对照原文摘要、实验与局限部分，提取 SciFact、HealthFC、训练样本及证据不足情形的说明。</li><li>将提取结果写成已知事实、局限与证据不足三栏，保留论文链接供逐条回查。</li></ol></section>
+<section><h2>03 示例输出</h2><ol><li>已知事实：论文研究的是借助 PubMed 检索生成结构化事实核查报告，并在 SciFact、HealthFC 等任务上评估；原文局限讨论称 SciFact 训练集约有 500 条标注样本。</li><li>局限：原文指出训练数据缺少常见的 Not Enough Info 情形；从 PubMed 摘要中的科研主张转向一般健康信息存在分布差异，HealthFC 上的改善也较有限。</li><li>核查结论：不能据此推广到全部医学主张。对未测试的领域、人群、语言和证据不足场景，当前来源不能提供普遍有效性证明；本例没有独立重跑论文评估。</li></ol></section>
+<section class="review"><h2>人工复核</h2><p>这是对公开论文范围与局限的人工来源核查演示。可回查原文摘要、实验及局限部分；未调用 BioCheck 模型，不将该外部工具或论文成果归为承安自有成果。</p></section>
+<section><h2>方法参考</h2><ul class="sources"><li><a href="https://arxiv.org/html/2608.23811v1" rel="noopener noreferrer">BioCheck Agent：Generating Biomedical Fact-Checking Reports with RL-Enhanced Agentic Search（预印本）</a><span>2026-08-24 · 外部研究，方法参考</span></li></ul></section>
+<div class="actions"><a class="button" href="/#contact">交流这个任务 →</a><a href="/examples/research-evidence-check.md" download>下载文字版</a><a href="/examples/">查看其他实例</a></div></main><footer><p>承安｜科研智能体与医院管理智能体</p><p>微信 <span class="selectable">moshabei666</span> · 邮箱 <span class="selectable">bapeimarsk@gmail.com</span></p><a href="/">返回个人主页 →</a></footer></body></html>
